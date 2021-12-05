@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3588176405dd414db4b5151b834153e7" Name="Diagram1">
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Branch" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_BranchPriceBook" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_BranchProduct" Width="1.5" PointX="6" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_BranchSalesAgent" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Commission" Width="1.5" PointX="3.75" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Currency" Width="1.5" PointX="1.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_InventoryItem" Width="1.5" PointX="8.25" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Invoice" Width="1.5" PointX="8.25" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_MemberCommssionDetail" Width="1.5" PointX="10.5" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_MemberSalesAgentPosition" Width="1.5" PointX="8.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_MemberSalesTarget" Width="1.5" PointX="8.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_MultipleRate" Width="1.5" PointX="9" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_PasswordHistory" Width="1.5" PointX="3.75" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Period" Width="1.5" PointX="3.75" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_PriceBook" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_PriceBookDetail" Width="1.5" PointX="12.25" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Product" Width="1.5" PointX="3.75" PointY="66.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_ProductCategory" Width="1.5" PointX="1.5" PointY="64.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesAgent" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesAgentPosition" Width="1.5" PointX="6" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesBudget" Width="1.5" PointX="3.75" PointY="59.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesBudgetDetail" Width="1.5" PointX="3" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesForecast" Width="1.5" PointX="1.5" PointY="59.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesForecastDetail" Width="1.5" PointX="9.25" PointY="43.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesTarget" Width="1.5" PointX="6" PointY="55.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesTargetDetail" Width="1.5" PointX="10.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SalesTransaction" Width="1.5" PointX="3" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Screen" Width="1.5" PointX="6.5" PointY="72.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SecurityGroup" Width="1.5" PointX="1.5" PointY="52.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SecurityGroupScreen" Width="1.5" PointX="8.75" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Serial" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SingleRate" Width="1.5" PointX="6" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Slab" Width="1.5" PointX="6.75" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SlabDetail" Width="1.5" PointX="6.75" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SlabValueDetail" Width="1.5" PointX="9" PointY="48.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_Stakeholder" Width="1.5" PointX="1.5" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_StakeholderBranch" Width="1.5" PointX="6" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_StakeholderSecurityGroup" Width="1.5" PointX="3.75" PointY="45.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_StakeholderType" Width="1.5" PointX="1.5" PointY="48.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_StakeholderTypeSecurityGroup" Width="1.5" PointX="6.75" PointY="48.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_StakeholderTypeStakeholder" Width="1.5" PointX="0.75" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SubProductCategory" Width="1.5" PointX="1.5" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_SystemModule" Width="1.5" PointX="4.25" PointY="72.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_UnitOfMeasure" Width="1.5" PointX="6" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_UnitOfMeasureType" Width="1.5" PointX="1.5" PointY="71.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BizFlexerDBModel.Biz_UserLog" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchPriceBook_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchProduct_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchSelesAgent_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_InventoryItem_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Invoice_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberCommssionDetail_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberSalesAgentPosition_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberSalesTarget_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesBudgetDetail_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesTargetDetail_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesTransaction_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderBranch_Branch" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchPriceBook_PriceBook" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Invoice_BranchPriceBook" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchProduct_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchProduct_SubProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_InventoryItem_BranchProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Invoice_BranchProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchSalesAgent_SalesAgent" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchSalesAgent_StakeholderTypeStakeholder" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_BranchSelesAgent_Stakeholder" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberSalesAgentPosition_BranchSelesAgent" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberSalesTarget_BranchSelesAgent" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MultipleRate_Commission" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesTarget_Commission" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SingleRate_Commission" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SlabValueDetail_Commission" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_PriceBook_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_InventoryItem_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Invoice_InventoryItem" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesTargetDetail_InventoryItem" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Invoice_SalesTarget" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Invoice_SalesTransaction" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Invoice_UnitOfMeasure" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberCommssionDetail_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberCommssionDetail_SalesTransaction" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberCommssionDetail_Stakeholder" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberSalesAgentPosition_SalesAgentPosition" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MemberSalesTarget_SalesTarget" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_MultipleRate_Slab" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_PasswordHistory_Stakeholder" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesBudget_Period" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesForecast_Period" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesTarget_Period" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_PriceBookDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_PriceBookDetail_UnitOfMeasure" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Product_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Product_SubProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Product_UnitOfMeasureType" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesBudgetDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesForecastDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SubProductCategory_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesBudget_SalesForecast" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesBudgetDetail_SalesBudget" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesTarget_SalesBudget" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesForecastDetail_SalesForecast" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesForecastDetail_UnitOfMeasure" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesTargetDetail_SalesTarget" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SalesTargetDetail_UnitOfMeasure" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Screen_SystemModule" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SecurityGroupScreen_Screen" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SecurityGroupScreen_SecurityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderSecurityGroup_SecurityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderTypeSecurityGroup_SecurityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SecurityGroupScreen_SystemModule" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SlabDetail_Slab" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SlabValueDetail_Slab" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_SlabValueDetail_SlabDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_Stakeholder_StakeholderType" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderBranch_Stakeholder" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderSecurityGroup_Stakeholder" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderTypeStakeholder_Stakeholder" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderSecurityGroup_StakeholderType" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderTypeSecurityGroup_StakeholderType" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_StakeholderTypeStakeholder_StakeholderType" ManuallyRouted="false" />
+        <AssociationConnector Association="BizFlexerDBModel.FK_UnitOfMeasure_UnitOfMeasureType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

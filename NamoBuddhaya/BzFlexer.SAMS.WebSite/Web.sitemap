@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Home\BizFlexerHome.aspx" title="Home"  description="">
+    <siteMapNode url="UserProfile.aspx" title="User Profile"  description="" />
+    <siteMapNode url="" title=""  description="" />
+    <siteMapNode url="Reference\BzFlexerHome.aspx" title="Reference"  description="">
+      <siteMapNode url="" title="Reference Data"  description="" >
+        <siteMapNode url="Reference\BzFlexerBranch.aspx" title="Branches"  description="" />
+        <siteMapNode url="Reference\BzFlexerUOMType.aspx" title="Unit of Measure Types"  description="" />
+        <siteMapNode url="Reference\BzFlexerUOM.aspx" title="Unit of Measure"  description="" />
+        <siteMapNode url="Reference\BzFlexerCurrency.aspx" title="Currency"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Stakeholder Management"  description="" >
+        <siteMapNode url="Reference\BzFlexerStakeholderTypes.aspx" title="Stakeholder Types"  description="" />
+        <siteMapNode url="Reference\BzFlexerEmployee.aspx" title="Stakeholder Details"  description="" />
+        <siteMapNode url="Reference\BzFlexerShTypeSh.aspx" title="Map Stakeholders"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Product Management"  description="" >
+        <siteMapNode url="Reference\BzFlexerProductCategories.aspx" title="Product categories"  description="" />
+        <siteMapNode url="Reference\BzFlexerSubCategory.aspx" title="Sub Product Categories"  description="" />
+        <siteMapNode url="Reference\BzFlexerProduct.aspx" title="Genaral Products"  description="" />
+        <siteMapNode url="Reference\BzFlexerBranchProduct.aspx" title="Branch Products"  description="" />
+        <siteMapNode url="Reference\BzFlexerInventoryItem.aspx" title="Inventory Item"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode url="AgentManagement\BzFlexerHome.aspx" title="Sales Agents Management"  description="">
+      <siteMapNode url="" title="Sales Agent Management"  description="" >
+        <siteMapNode url="AgentManagement\BzFlexerSalesAgentPosision.aspx" title="Sales Representatives Position"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerBranchAgent.aspx" title="Branch Sales Representatives"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerMemberSalesAgentPosition.aspx" title="Map Sales Representatives Position"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Sales Forecasting"  description="" >
+        <siteMapNode url="AgentManagement\BzFlexerSalesForecast.aspx" title="Sales Forecast"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerSalesForecastDetails.aspx" title="Sales Forecast Details"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Sales Budgeting"  description="" >
+        <siteMapNode url="AgentManagement\BzFlexerBudget.aspx" title="Sales Budget"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerBudgetDetail.aspx" title="Sales Budget Details"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Sales Targeting"  description="" >
+        <siteMapNode url="AgentManagement\BzFlexerSalesTargets.aspx" title="Sales Target"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerSalesTargetsDetail.aspx" title="Sales Target Details"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerSalesTargetAssignment.aspx" title="Sales Target Assign"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Commission Management"  description="" >
+        <siteMapNode url="AgentManagement\BzFlexerCommissions.aspx" title="Commission"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerSingleRateCommissions.aspx" title="Single Rate Commission"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerMultipleRateCommissions.aspx" title="Multiple Rate Commission"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerSlabs.aspx" title="Commission Slab"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Sales Transactions"  description="" >
+        <siteMapNode url="AgentManagement\BzFlexerPriceBook.aspx" title="Price Book"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerPriceBookDetails.aspx" title="Price Book Details"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerBranchPrizeBooks.aspx" title="Branch Price Book"  description="" />
+        <siteMapNode url="AgentManagement\BzFlexerInvoices.aspx" title="Sales Invoice"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Process"  description="" >
+        <siteMapNode url="~\AgentManagement\BzFlexerCommissionsCal.aspx" title="Commission Calculation Process"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+    
+      <siteMapNode url="ReportCenter/BzFlexerHome.aspx" title="Report Center"  description="">
+      <siteMapNode url="ReportCenter\BizSalesSummery.aspx" title="Sales Summery"  description="" />
+      <siteMapNode url="ReportCenter\BizForecastSummery.aspx" title="Sales Forecast Summery"  description="" />
+      <siteMapNode url="ReportCenter\iReporter\BizBudgetSummeryReport.aspx" title="Sales Budget summery"  description="" />
+      <siteMapNode url="ReportCenter\BizTargetSummery.aspx" title="Sales Target Summery"  description="" />
+      <siteMapNode url="ReportCenter\BizCommissionSummery.aspx" title="Commission Summery"  description="" />
+      <siteMapNode url="ReportCenter\BizCommissionChart.aspx" title="Commission Chart"  description="" />
+    </siteMapNode>
+    <!--<siteMapNode url="ReportCenter/BzFlexerHome.aspx" title="Report Center"  description="">
+
+      <siteMapNode url="ReportCenter\SalesSummeryForm.aspx" title="Sales Summery"  description="" />
+      <siteMapNode url="ReportCenter\ForecastSummeryForm.aspx" title="Sales Forecast Summery"  description="" />
+      <siteMapNode url="ReportCenter\BudgetSummeryForm.aspx" title="Sales Budget summery"  description="" />
+      <siteMapNode url="ReportCenter\TargetSummeryForm.aspx" title="Sales Target Summery"  description="" />
+      <siteMapNode url="ReportCenter\CommissionSummeryForm.aspx" title="Commission Summery"  description="" />
+      <siteMapNode url="ReportCenter\CommissionChartForm.aspx" title="Commission Chart"  description="" />
+    </siteMapNode>-->
+
+    <siteMapNode url="Security/BzFlexerHome.aspx" title="Security "  description="">
+      <siteMapNode url="" title="Security Definition"  description="" >
+        <siteMapNode url="Security\BzFlexerSecurityGroup.aspx" title="Security User Groups"  description="" />
+        <siteMapNode url="Security\BzFlexerShTypeSecurityGroup.aspx" title="Security User Group Stakeholder Type"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="System Menu Handling"  description="" >
+        <siteMapNode url="Security\BzFlexerSystemModule.aspx" title="System Modules"  description="" />
+        <siteMapNode url="Security\BzFlexerScreen.aspx" title="System Screens"  description="" />
+      </siteMapNode>
+      <siteMapNode url="" title="Access Maintenance"  description="" >
+        <siteMapNode url="Security\BzFlexerScreenAuthorization.aspx" title="Screen Permission"  description="" />
+        <siteMapNode url="Security\BzFlexerAccess.aspx" title="User Permission"  description="" />
+      </siteMapNode>
+    </siteMapNode>
+
+  </siteMapNode>
+
+</siteMap>

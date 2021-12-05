@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Home/BizFlexer.Master" AutoEventWireup="true" CodeBehind="ReportHome.master.cs" Inherits="BzFlexer.SAMS.WebSite.ReportCenter.ReportHome" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+     
+     <%--   <link href="../BoostUnit/eCommerce/css/webforms.css" rel="stylesheet" />--%>
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="tabcontain" id="Main">
+        <cc1:TabContainer ID="tabContainerMenuTree" runat="server" AutoPostBack="false" Height="125px" Width="200px">
+            <cc1:TabPanel ID="TabPanel1" runat="server" HeaderText="Main Menu">
+                <HeaderTemplate>
+                    Main Menu
+                </HeaderTemplate>
+                <ContentTemplate>
+                    <%--<asp:Panel runat="server" ID="Panel1" ScrollBars="Vertical" >--%>
+                    <asp:UpdatePanel ID="updatePanelLeftNavigation" runat="server">
+                        <ContentTemplate>
+                            <div id="Div1" class="leftnav" runat="server">
+                                <cc1:Accordion ID="accordionModuleMenu" runat="server" ContentCssClass="accordionContent"
+                                    HeaderSelectedCssClass="accordionHeaderSelected" HeaderCssClass="accordionHeader"
+                                    SelectedIndex="0" FadeTransitions="true">
+                                    <Panes>
+                                       <%-- <cc1:AccordionPane ID="Item2" runat="server">
+                                            <Header>
+                                                Report Center
+                                            </Header>
+                                            <Content>
+                                                <ul class="form">
+                                                    <li>
+                                                        <div class="formfield">
+                                                            <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument="~/Report/SalesSummeryForm.aspx"
+                                                               OnClick="MenuLinkButton_OnClick" autopostBack="true">Sales Summery</asp:LinkButton>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="formfield">
+                                                            <asp:LinkButton ID="LinkButton2" runat="server" CommandArgument="~/Report/ForecastSummeryForm.aspx"
+                                                             OnClick="MenuLinkButton_OnClick" autopostBack="true">Sales Forecast Summery</asp:LinkButton>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="formfield">
+                                                            <asp:LinkButton ID="LinkButton3" runat="server" CommandArgument="~/Report/BudgetSummeryForm.aspx"
+                                                             OnClick="MenuLinkButton_OnClick" autopostBack="true"  >Sales Budget Summery</asp:LinkButton>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="formfield">
+                                                            <asp:LinkButton ID="LinkButton4" runat="server" CommandArgument="~/Report/TargetSummeryForm.aspx"
+                                                             OnClick="MenuLinkButton_OnClick" autopostBack="true" >Sales Target Summery</asp:LinkButton>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="formfield">
+                                                            <asp:LinkButton ID="LinkButton5" runat="server" CommandArgument="~/Report/CommissionSummeryForm.aspx"
+                                                              OnClick="MenuLinkButton_OnClick" autopostBack="true" >Sales Commission Summery</asp:LinkButton>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </Content>
+                                        </cc1:AccordionPane>--%>
+                                        
+                                    </Panes>
+                                </cc1:Accordion>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <%--</asp:Panel>--%>
+                </ContentTemplate>
+            </cc1:TabPanel>
+            <cc1:TabPanel ID="tabProgramTree" runat="server" HeaderText="Program Tree">
+                <ContentTemplate>
+                    <asp:UpdatePanel ID="updatePanelTreeContent" runat="server">
+                        <ContentTemplate>
+                            <asp:ContentPlaceHolder ID="contentPlaceHolderProgramTree" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <%--<asp:Panel ID="PanelOrganizationStructure" runat="server">
+                        <asp:TreeView ID="TreeViewBusinessUnit" runat="server" OnSelectedNodeChanged="BuzUnitHierarchyNode_Click"  ShowLines="True"   >
+                        <SelectedNodeStyle BackColor="Yellow" BorderWidth="1" Font-Bold ="true"  ForeColor="Blue"/>
+                        <Nodes>
+                        </Nodes>
+                        </asp:TreeView>
+                    </asp:Panel>--%>
+                </ContentTemplate>
+            </cc1:TabPanel>
+        </cc1:TabContainer>
+    </div>
+    <%--<div class="content" style="width: 80%">--%>
+    <div class="content">
+        <asp:UpdatePanel ID="updatePanelContentPage" runat="server">
+            <ContentTemplate>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+</asp:Content>

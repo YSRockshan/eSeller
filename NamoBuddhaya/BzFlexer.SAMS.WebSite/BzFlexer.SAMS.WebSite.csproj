@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91A37B38-FFEC-4EBE-8964-1F0DD6B6D455}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BzFlexer.SAMS.WebSite</RootNamespace>
+    <AssemblyName>BzFlexer.SAMS.WebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=17.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.17.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\anna\xpdf\Bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>..\..\..\anna\tPDFo\tryPDF\tryPDF\Bin\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>..\..\..\anna\tPDFo\tryPDF\tryPDF\Bin\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>..\..\..\anna\tPDFo\tryPDF\tryPDF\Bin\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="pdfsharp">
+      <HintPath>..\..\..\anna\tPDFo\tryPDF\tryPDF\Bin\pdfsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="pdfsharp.charting">
+      <HintPath>..\..\..\anna\tPDFo\tryPDF\tryPDF\Bin\pdfsharp.charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AgentManagement\BzFlexerBranchAgent.aspx" />
+    <Content Include="AgentManagement\BzFlexerBranchPrizeBooks.aspx" />
+    <Content Include="AgentManagement\BzFlexerBudget.aspx" />
+    <Content Include="AgentManagement\BzFlexerBudgetDetail.aspx" />
+    <Content Include="AgentManagement\BzFlexerBudgetPeriods.aspx" />
+    <Content Include="AgentManagement\BzFlexerCommissions.aspx" />
+    <Content Include="AgentManagement\BzFlexerCommissionsCal.aspx" />
+    <Content Include="AgentManagement\BzFlexerHome.aspx" />
+    <Content Include="AgentManagement\BzFlexerInvoices.aspx" />
+    <Content Include="AgentManagement\BzFlexerMemberSalesAgentPosition.aspx" />
+    <Content Include="AgentManagement\BzFlexerMultipleRateCommissions.aspx" />
+    <Content Include="AgentManagement\BzFlexerPeriods.aspx" />
+    <Content Include="AgentManagement\BzFlexerPriceBook.aspx" />
+    <Content Include="AgentManagement\BzFlexerPriceBookDetails.aspx" />
+    <Content Include="AgentManagement\BzFlexerSalesAgentPosision.aspx" />
+    <Content Include="AgentManagement\BzFlexerSalesForecast.aspx" />
+    <Content Include="AgentManagement\BzFlexerSalesForecastDetails.aspx" />
+    <Content Include="AgentManagement\BzFlexerSalesForecastPeriods.aspx" />
+    <Content Include="AgentManagement\BzFlexerSalesTargetAssignment.aspx" />
+    <Content Include="AgentManagement\BzFlexerSalesTargets.aspx" />
+    <Content Include="AgentManagement\BzFlexerSalesTargetsDetail.aspx" />
+    <Content Include="AgentManagement\BzFlexerSingleRateCommissions.aspx" />
+    <Content Include="AgentManagement\BzFlexerSlabs.aspx" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\agency.min.css" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\HomeSlides.css" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\js\slider.js" />
+    <Content Include="BoostUnit\eCommerce\css\BzStyles.css" />
+    <Content Include="BoostUnit\eCommerce\css\NBstyle.css" />
+    <Content Include="BoostUnit\eCommerce\css\webforms.css" />
+    <Content Include="BoostUnit\eCommerce\images\a1.png" />
+    <Content Include="BoostUnit\eCommerce\images\a2.png" />
+    <Content Include="BoostUnit\eCommerce\images\arrow-next.png" />
+    <Content Include="BoostUnit\eCommerce\images\arrow-prev.png" />
+    <Content Include="BoostUnit\eCommerce\images\arrows.png" />
+    <Content Include="BoostUnit\eCommerce\images\b1.png" />
+    <Content Include="BoostUnit\eCommerce\images\b2.png" />
+    <Content Include="BoostUnit\eCommerce\images\b3.png" />
+    <Content Include="BoostUnit\eCommerce\images\banner.png" />
+    <Content Include="BoostUnit\eCommerce\images\banner.psd" />
+    <Content Include="BoostUnit\eCommerce\images\bg.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\BizFlexer logo foo.png" />
+    <Content Include="BoostUnit\eCommerce\images\BizFlexer logo.png" />
+    <Content Include="BoostUnit\eCommerce\images\bu\banner1.png" />
+    <Content Include="BoostUnit\eCommerce\images\bu\footer-banner.png" />
+    <Content Include="BoostUnit\eCommerce\images\bu\logo1.png" />
+    <Content Include="BoostUnit\eCommerce\images\bu\logo11.png" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic.png" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic1.png" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic10.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic11.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic12.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic13.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic14.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic15.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic16.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic17.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic18.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic19.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic2.png" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic20.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic21.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic22.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic23.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic24.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic25.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic4.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic5.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic6.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic7.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic8.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic9.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\t-pic18.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\t-pic19.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\t-pic20.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\t-pic21.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\t-pic22.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\bu\t-pic23.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\comment.png" />
+    <Content Include="BoostUnit\eCommerce\images\compare.png" />
+    <Content Include="BoostUnit\eCommerce\images\delivery.png" />
+    <Content Include="BoostUnit\eCommerce\images\f-bg1.png" />
+    <Content Include="BoostUnit\eCommerce\images\fb.png" />
+    <Content Include="BoostUnit\eCommerce\images\Footer-Banner-Samsung-Galaxy-8-top.jpg" />
+    <Content Include="BoostUnit\eCommerce\images\footer-banner.psd" />
+    <Content Include="BoostUnit\eCommerce\images\graph.png" />
+    <Content Include="BoostUnit\eCommerce\images\icons.svg" />
+    <Content Include="BoostUnit\eCommerce\images\icon_minus.png" />
+    <Content Include="BoostUnit\eCommerce\images\icon_plus.png" />
+    <Content Include="BoostUnit\eCommerce\images\large-button-overlay.png" />
+    <Content Include="BoostUnit\eCommerce\images\list.png" />
+    <Content Include="BoostUnit\eCommerce\images\marker-email.gif" />
+    <Content Include="BoostUnit\eCommerce\images\marker-reviews.gif" />
+    <Content Include="BoostUnit\eCommerce\images\marker1.gif" />
+    <Content Include="BoostUnit\eCommerce\images\pic3.png" />
+    <Content Include="BoostUnit\eCommerce\images\plus.png" />
+    <Content Include="BoostUnit\eCommerce\images\plus1.png" />
+    <Content Include="BoostUnit\eCommerce\images\product-bg.png" />
+    <Content Include="BoostUnit\eCommerce\images\rss.png" />
+    <Content Include="BoostUnit\eCommerce\images\sale.png" />
+    <Content Include="BoostUnit\eCommerce\images\shadow.png" />
+    <Content Include="BoostUnit\eCommerce\images\shadow.psd" />
+    <Content Include="BoostUnit\eCommerce\images\shadow1.png" />
+    <Content Include="BoostUnit\eCommerce\images\tab-border.png" />
+    <Content Include="BoostUnit\eCommerce\images\tw.png" />
+    <Content Include="BoostUnit\eCommerce\images\wishlist.png" />
+    <Content Include="BoostUnit\eCommerce\images\zoom.png" />
+    <Content Include="BoostUnit\images\home\about\1.jpg" />
+    <Content Include="BoostUnit\images\home\about\2.jpg" />
+    <Content Include="BoostUnit\images\home\about\3.jpg" />
+    <Content Include="BoostUnit\images\home\about\4.jpg" />
+    <Content Include="BoostUnit\images\home\header-bg.jpg" />
+    <Content Include="BoostUnit\images\home\logos\creative-market.jpg" />
+    <Content Include="BoostUnit\images\home\logos\designmodo.jpg" />
+    <Content Include="BoostUnit\images\home\logos\envato.jpg" />
+    <Content Include="BoostUnit\images\home\logos\themeforest.jpg" />
+    <Content Include="BoostUnit\images\home\map-image.png" />
+    <Content Include="BoostUnit\images\home\portfolio\01-full.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\01-thumbnail.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\02-full.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\02-thumbnail.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\03-full.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\03-thumbnail.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\04-full.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\04-thumbnail.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\05-full.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\05-thumbnail.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\06-full.jpg" />
+    <Content Include="BoostUnit\images\home\portfolio\06-thumbnail.jpg" />
+    <Content Include="BoostUnit\images\home\team\1.jpg" />
+    <Content Include="BoostUnit\images\home\team\2.jpg" />
+    <Content Include="BoostUnit\images\home\team\3.jpg" />
+    <Content Include="BoostUnit\images\Select.png" />
+    <Content Include="BoostUnit\images\slider\abt.png" />
+    <Content Include="BoostUnit\images\slider\fz.png" />
+    <Content Include="BoostUnit\images\slider\home.png" />
+    <Content Include="BoostUnit\images\slider\product.png" />
+    <Content Include="BoostUnit\images\slider\WelcomeLogin.png" />
+    <Content Include="BoostUnit\images\slider\y.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Home\MyAccount.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Home\BizFlexer.Master" />
+    <Content Include="Reference\BizFlexerBranch.aspx" />
+    <Content Include="Reference\ReferenceHome.master" />
+    <Content Include="ReportCenter\BizBudgetSummery.aspx" />
+    <Content Include="ReportCenter\BizCommissionChart.aspx" />
+    <Content Include="ReportCenter\BizCommissionSummery.aspx" />
+    <Content Include="ReportCenter\BizForecastSummery.aspx" />
+    <Content Include="ReportCenter\BizSalesSummery.aspx" />
+    <Content Include="ReportCenter\BizTargetSummery.aspx" />
+    <Content Include="ReportCenter\BzFlexerHome.aspx" />
+    <Content Include="ReportCenter\iReporter\iBudgetSummery.aspx" />
+    <Content Include="ReportCenter\iReporter\iCommissionSummery.aspx" />
+    <Content Include="ReportCenter\iReporter\iForecastSummery.aspx" />
+    <Content Include="ReportCenter\iReporter\iSalesSummery.aspx" />
+    <Content Include="ReportCenter\iReporter\iTargetSummery.aspx" />
+    <Content Include="ReportCenter\iReporter\WebForm1.aspx" />
+    <Content Include="Security\Rep\ReportShTypeSecurityGroup.aspx" />
+    <Content Include="Security\SecurityHome.master" />
+    <Content Include="AgentManagement\AgentManagementHome.master" />
+    <Content Include="BoostUnit\eCommerce\images\bu\pic1.psd" />
+    <Content Include="ReportCenter\ReportHome.master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\btn.css" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\css\font-awesome.min.css" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="BoostUnit\bootstrap\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="BoostUnit\eCommerce\css\font.css" />
+    <Content Include="BoostUnit\eCommerce\css\global.css" />
+    <Content Include="BoostUnit\eCommerce\css\swipebox.css" />
+    <Content Include="BoostUnit\eCommerce\js\easyResponsiveTabs.js" />
+    <Content Include="BoostUnit\eCommerce\js\ios-orientationchange-fix.js" />
+    <Content Include="BoostUnit\eCommerce\js\jquery-1.9.0.min.js" />
+    <Content Include="BoostUnit\eCommerce\js\jquery.contentcarousel.js" />
+    <Content Include="BoostUnit\eCommerce\js\jquery.easing.1.1.js" />
+    <Content Include="BoostUnit\eCommerce\js\jquery.min.js" />
+    <Content Include="BoostUnit\eCommerce\js\jquery.mousewheel.js" />
+    <Content Include="BoostUnit\eCommerce\js\jquery.swipebox.min.js" />
+    <Content Include="BoostUnit\eCommerce\js\login.js" />
+    <Content Include="BoostUnit\eCommerce\js\menu_jquery.js" />
+    <Content Include="BoostUnit\eCommerce\js\slides.min.jquery.js" />
+    <Content Include="BoostUnit\ValidationText.ascx" />
+    <Content Include="eCommerce\index.aspx" />
+    <Content Include="eCommerce\js\easyResponsiveTabs.js" />
+    <Content Include="eCommerce\js\ios-orientationchange-fix.js" />
+    <Content Include="eCommerce\js\jquery-1.9.0.min.js" />
+    <Content Include="eCommerce\js\jquery.contentcarousel.js" />
+    <Content Include="eCommerce\js\jquery.easing.1.3.js" />
+    <Content Include="eCommerce\js\jquery.min.js" />
+    <Content Include="eCommerce\js\jquery.mousewheel.js" />
+    <Content Include="eCommerce\js\jquery.swipebox.min.js" />
+    <Content Include="eCommerce\js\login.js" />
+    <Content Include="eCommerce\js\menu_jquery.js" />
+    <Content Include="eCommerce\js\slides.min.jquery.js" />
+    <Content Include="Home\BizFlexerHome.aspx" />
+    <Content Include="Home\Global.asax" />
+    <Content Include="Reference\BzFlexerBranchProduct.aspx" />
+    <Content Include="Reference\BzFlexerCoperate.aspx" />
+    <Content Include="Reference\BzFlexerCurrency.aspx" />
+    <Content Include="Reference\BzFlexerEmployee.aspx" />
+    <Content Include="Reference\BzFlexerHome.aspx" />
+    <Content Include="Reference\BzFlexerInventoryItem.aspx" />
+    <Content Include="Reference\BzFlexerParameter.aspx" />
+    <Content Include="Reference\BzFlexerParameterValues.aspx" />
+    <Content Include="Reference\BzFlexerProduct.aspx" />
+    <Content Include="Reference\BzFlexerProductCategories.aspx" />
+    <Content Include="Reference\BzFlexerProductCode.aspx" />
+    <Content Include="Reference\BzFlexerProductDetails.aspx" />
+    <Content Include="Reference\BzFlexerShTypeSh.aspx" />
+    <Content Include="Reference\BzFlexerStakeholderTypes.aspx" />
+    <Content Include="Reference\BzFlexerStandardProperyCode.aspx" />
+    <Content Include="Reference\BzFlexerSubCategory.aspx" />
+    <Content Include="Reference\BzFlexerTax.aspx" />
+    <Content Include="Reference\BzFlexerTaxRates.aspx" />
+    <Content Include="Reference\BzFlexerUOM.aspx" />
+    <Content Include="Reference\BzFlexerUOMType.aspx" />
+    <Content Include="Security\BzFlexerAccess.aspx" />
+    <Content Include="Security\BzFlexerHome.aspx" />
+    <Content Include="Security\BzFlexerScreen.aspx" />
+    <Content Include="Security\BzFlexerScreenAuthorization.aspx" />
+    <Content Include="Security\BzFlexerSecurityGroup.aspx" />
+    <Content Include="Security\BzFlexerShTypeSecurityGroup.aspx" />
+    <Content Include="Security\BzFlexerSystemModule.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentManagement\AgentManagementHome.master.cs">
+      <DependentUpon>AgentManagementHome.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\AgentManagementHome.master.designer.cs">
+      <DependentUpon>AgentManagementHome.master</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBranchAgent.aspx.cs">
+      <DependentUpon>BzFlexerBranchAgent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBranchAgent.aspx.designer.cs">
+      <DependentUpon>BzFlexerBranchAgent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBranchPrizeBooks.aspx.cs">
+      <DependentUpon>BzFlexerBranchPrizeBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBranchPrizeBooks.aspx.designer.cs">
+      <DependentUpon>BzFlexerBranchPrizeBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBudget.aspx.cs">
+      <DependentUpon>BzFlexerBudget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBudget.aspx.designer.cs">
+      <DependentUpon>BzFlexerBudget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBudgetDetail.aspx.cs">
+      <DependentUpon>BzFlexerBudgetDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBudgetDetail.aspx.designer.cs">
+      <DependentUpon>BzFlexerBudgetDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBudgetPeriods.aspx.cs">
+      <DependentUpon>BzFlexerBudgetPeriods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerBudgetPeriods.aspx.designer.cs">
+      <DependentUpon>BzFlexerBudgetPeriods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerCommissions.aspx.cs">
+      <DependentUpon>BzFlexerCommissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerCommissions.aspx.designer.cs">
+      <DependentUpon>BzFlexerCommissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerCommissionsCal.aspx.cs">
+      <DependentUpon>BzFlexerCommissionsCal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerCommissionsCal.aspx.designer.cs">
+      <DependentUpon>BzFlexerCommissionsCal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerHome.aspx.cs">
+      <DependentUpon>BzFlexerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerHome.aspx.designer.cs">
+      <DependentUpon>BzFlexerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerInvoices.aspx.cs">
+      <DependentUpon>BzFlexerInvoices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerInvoices.aspx.designer.cs">
+      <DependentUpon>BzFlexerInvoices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerMemberSalesAgentPosition.aspx.cs">
+      <DependentUpon>BzFlexerMemberSalesAgentPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerMemberSalesAgentPosition.aspx.designer.cs">
+      <DependentUpon>BzFlexerMemberSalesAgentPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerMultipleRateCommissions.aspx.cs">
+      <DependentUpon>BzFlexerMultipleRateCommissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerMultipleRateCommissions.aspx.designer.cs">
+      <DependentUpon>BzFlexerMultipleRateCommissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerPeriods.aspx.cs">
+      <DependentUpon>BzFlexerPeriods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerPeriods.aspx.designer.cs">
+      <DependentUpon>BzFlexerPeriods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerPriceBook.aspx.cs">
+      <DependentUpon>BzFlexerPriceBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerPriceBook.aspx.designer.cs">
+      <DependentUpon>BzFlexerPriceBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerPriceBookDetails.aspx.cs">
+      <DependentUpon>BzFlexerPriceBookDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerPriceBookDetails.aspx.designer.cs">
+      <DependentUpon>BzFlexerPriceBookDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesAgentPosision.aspx.cs">
+      <DependentUpon>BzFlexerSalesAgentPosision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesAgentPosision.aspx.designer.cs">
+      <DependentUpon>BzFlexerSalesAgentPosision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesForecast.aspx.cs">
+      <DependentUpon>BzFlexerSalesForecast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesForecast.aspx.designer.cs">
+      <DependentUpon>BzFlexerSalesForecast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesForecastDetails.aspx.cs">
+      <DependentUpon>BzFlexerSalesForecastDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesForecastDetails.aspx.designer.cs">
+      <DependentUpon>BzFlexerSalesForecastDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesForecastPeriods.aspx.cs">
+      <DependentUpon>BzFlexerSalesForecastPeriods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesForecastPeriods.aspx.designer.cs">
+      <DependentUpon>BzFlexerSalesForecastPeriods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesTargetAssignment.aspx.cs">
+      <DependentUpon>BzFlexerSalesTargetAssignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesTargetAssignment.aspx.designer.cs">
+      <DependentUpon>BzFlexerSalesTargetAssignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesTargets.aspx.cs">
+      <DependentUpon>BzFlexerSalesTargets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesTargets.aspx.designer.cs">
+      <DependentUpon>BzFlexerSalesTargets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesTargetsDetail.aspx.cs">
+      <DependentUpon>BzFlexerSalesTargetsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSalesTargetsDetail.aspx.designer.cs">
+      <DependentUpon>BzFlexerSalesTargetsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSingleRateCommissions.aspx.cs">
+      <DependentUpon>BzFlexerSingleRateCommissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSingleRateCommissions.aspx.designer.cs">
+      <DependentUpon>BzFlexerSingleRateCommissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSlabs.aspx.cs">
+      <DependentUpon>BzFlexerSlabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgentManagement\BzFlexerSlabs.aspx.designer.cs">
+      <DependentUpon>BzFlexerSlabs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BoostUnit\ValidationText.ascx.cs">
+      <DependentUpon>ValidationText.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BoostUnit\ValidationText.ascx.designer.cs">
+      <DependentUpon>ValidationText.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="eCommerce\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eCommerce\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Biz.cs" />
+    <Compile Include="Home\BizFlexer.Master.cs">
+      <DependentUpon>BizFlexer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\BizFlexer.Master.designer.cs">
+      <DependentUpon>BizFlexer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home\BizFlexerHome.aspx.cs">
+      <DependentUpon>BizFlexerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\BizFlexerHome.aspx.designer.cs">
+      <DependentUpon>BizFlexerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Global11.cs" />
+    <Compile Include="Home\Key.cs" />
+    <Compile Include="Home\MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BizFlexerBranch.aspx.cs">
+      <DependentUpon>BizFlexerBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BizFlexerBranch.aspx.designer.cs">
+      <DependentUpon>BizFlexerBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerBranchProduct.aspx.cs">
+      <DependentUpon>BzFlexerBranchProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerBranchProduct.aspx.designer.cs">
+      <DependentUpon>BzFlexerBranchProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerCoperate.aspx.cs">
+      <DependentUpon>BzFlexerCoperate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerCoperate.aspx.designer.cs">
+      <DependentUpon>BzFlexerCoperate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerCurrency.aspx.cs">
+      <DependentUpon>BzFlexerCurrency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerCurrency.aspx.designer.cs">
+      <DependentUpon>BzFlexerCurrency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerEmployee.aspx.cs">
+      <DependentUpon>BzFlexerEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerEmployee.aspx.designer.cs">
+      <DependentUpon>BzFlexerEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerHome.aspx.cs">
+      <DependentUpon>BzFlexerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerHome.aspx.designer.cs">
+      <DependentUpon>BzFlexerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerInventoryItem.aspx.cs">
+      <DependentUpon>BzFlexerInventoryItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerInventoryItem.aspx.designer.cs">
+      <DependentUpon>BzFlexerInventoryItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerParameter.aspx.cs">
+      <DependentUpon>BzFlexerParameter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerParameter.aspx.designer.cs">
+      <DependentUpon>BzFlexerParameter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerParameterValues.aspx.cs">
+      <DependentUpon>BzFlexerParameterValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerParameterValues.aspx.designer.cs">
+      <DependentUpon>BzFlexerParameterValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerProduct.aspx.cs">
+      <DependentUpon>BzFlexerProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerProduct.aspx.designer.cs">
+      <DependentUpon>BzFlexerProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerProductCategories.aspx.cs">
+      <DependentUpon>BzFlexerProductCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerProductCategories.aspx.designer.cs">
+      <DependentUpon>BzFlexerProductCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerProductCode.aspx.cs">
+      <DependentUpon>BzFlexerProductCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerProductCode.aspx.designer.cs">
+      <DependentUpon>BzFlexerProductCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerProductDetails.aspx.cs">
+      <DependentUpon>BzFlexerProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerProductDetails.aspx.designer.cs">
+      <DependentUpon>BzFlexerProductDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerShTypeSh.aspx.cs">
+      <DependentUpon>BzFlexerShTypeSh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerShTypeSh.aspx.designer.cs">
+      <DependentUpon>BzFlexerShTypeSh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerStakeholderTypes.aspx.cs">
+      <DependentUpon>BzFlexerStakeholderTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerStakeholderTypes.aspx.designer.cs">
+      <DependentUpon>BzFlexerStakeholderTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerStandardProperyCode.aspx.cs">
+      <DependentUpon>BzFlexerStandardProperyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerStandardProperyCode.aspx.designer.cs">
+      <DependentUpon>BzFlexerStandardProperyCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerSubCategory.aspx.cs">
+      <DependentUpon>BzFlexerSubCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerSubCategory.aspx.designer.cs">
+      <DependentUpon>BzFlexerSubCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerTax.aspx.cs">
+      <DependentUpon>BzFlexerTax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerTax.aspx.designer.cs">
+      <DependentUpon>BzFlexerTax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerTaxRates.aspx.cs">
+      <DependentUpon>BzFlexerTaxRates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerTaxRates.aspx.designer.cs">
+      <DependentUpon>BzFlexerTaxRates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerUOM.aspx.cs">
+      <DependentUpon>BzFlexerUOM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerUOM.aspx.designer.cs">
+      <DependentUpon>BzFlexerUOM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\BzFlexerUOMType.aspx.cs">
+      <DependentUpon>BzFlexerUOMType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\BzFlexerUOMType.aspx.designer.cs">
+      <DependentUpon>BzFlexerUOMType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\ReferenceHome.master.cs">
+      <DependentUpon>ReferenceHome.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reference\ReferenceHome.master.designer.cs">
+      <DependentUpon>ReferenceHome.master</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\BizBudgetSummery.aspx.cs">
+      <DependentUpon>BizBudgetSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\BizBudgetSummery.aspx.designer.cs">
+      <DependentUpon>BizBudgetSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\BizCommissionChart.aspx.cs">
+      <DependentUpon>BizCommissionChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\BizCommissionChart.aspx.designer.cs">
+      <DependentUpon>BizCommissionChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\BizCommissionSummery.aspx.cs">
+      <DependentUpon>BizCommissionSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\BizCommissionSummery.aspx.designer.cs">
+      <DependentUpon>BizCommissionSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\BizForecastSummery.aspx.cs">
+      <DependentUpon>BizForecastSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\BizForecastSummery.aspx.designer.cs">
+      <DependentUpon>BizForecastSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\BizSalesSummery.aspx.cs">
+      <DependentUpon>BizSalesSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\BizSalesSummery.aspx.designer.cs">
+      <DependentUpon>BizSalesSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\BizTargetSummery.aspx.cs">
+      <DependentUpon>BizTargetSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\BizTargetSummery.aspx.designer.cs">
+      <DependentUpon>BizTargetSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\BzFlexerHome.aspx.cs">
+      <DependentUpon>BzFlexerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\BzFlexerHome.aspx.designer.cs">
+      <DependentUpon>BzFlexerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iBudgetSummery.aspx.cs">
+      <DependentUpon>iBudgetSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iBudgetSummery.aspx.designer.cs">
+      <DependentUpon>iBudgetSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iCommissionSummery.aspx.cs">
+      <DependentUpon>iCommissionSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iCommissionSummery.aspx.designer.cs">
+      <DependentUpon>iCommissionSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iForecastSummery.aspx.cs">
+      <DependentUpon>iForecastSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iForecastSummery.aspx.designer.cs">
+      <DependentUpon>iForecastSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iSalesSummery.aspx.cs">
+      <DependentUpon>iSalesSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iSalesSummery.aspx.designer.cs">
+      <DependentUpon>iSalesSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iTargetSummery.aspx.cs">
+      <DependentUpon>iTargetSummery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\iTargetSummery.aspx.designer.cs">
+      <DependentUpon>iTargetSummery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\iReporter\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\ReportHome.master.cs">
+      <DependentUpon>ReportHome.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\ReportHome.master.designer.cs">
+      <DependentUpon>ReportHome.master</DependentUpon>
+    </Compile>
+    <Compile Include="Security\BzFlexerAccess.aspx.cs">
+      <DependentUpon>BzFlexerAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\BzFlexerAccess.aspx.designer.cs">
+      <DependentUpon>BzFlexerAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\BzFlexerHome.aspx.cs">
+      <DependentUpon>BzFlexerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\BzFlexerHome.aspx.designer.cs">
+      <DependentUpon>BzFlexerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\BzFlexerScreen.aspx.cs">
+      <DependentUpon>BzFlexerScreen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\BzFlexerScreen.aspx.designer.cs">
+      <DependentUpon>BzFlexerScreen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\BzFlexerScreenAuthorization.aspx.cs">
+      <DependentUpon>BzFlexerScreenAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\BzFlexerScreenAuthorization.aspx.designer.cs">
+      <DependentUpon>BzFlexerScreenAuthorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\BzFlexerSecurityGroup.aspx.cs">
+      <DependentUpon>BzFlexerSecurityGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\BzFlexerSecurityGroup.aspx.designer.cs">
+      <DependentUpon>BzFlexerSecurityGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\BzFlexerShTypeSecurityGroup.aspx.cs">
+      <DependentUpon>BzFlexerShTypeSecurityGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\BzFlexerShTypeSecurityGroup.aspx.designer.cs">
+      <DependentUpon>BzFlexerShTypeSecurityGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\BzFlexerSystemModule.aspx.cs">
+      <DependentUpon>BzFlexerSystemModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\BzFlexerSystemModule.aspx.designer.cs">
+      <DependentUpon>BzFlexerSystemModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Rep\ReportShTypeSecurityGroup.aspx.cs">
+      <DependentUpon>ReportShTypeSecurityGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\Rep\ReportShTypeSecurityGroup.aspx.designer.cs">
+      <DependentUpon>ReportShTypeSecurityGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\SecurityHome.master.cs">
+      <DependentUpon>SecurityHome.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\SecurityHome.master.designer.cs">
+      <DependentUpon>SecurityHome.master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BzFlexer.SAMS.Biz\BzFlexer.SAMS.Biz.csproj">
+      <Project>{BBE27F8D-37D1-4C38-A4D2-9BB12078773A}</Project>
+      <Name>BzFlexer.SAMS.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BzFlexer.SAMS.Service\BzFlexer.SAMS.Service.csproj">
+      <Project>{58525E0A-E084-40EF-8D4E-C757BE672258}</Project>
+      <Name>BzFlexer.SAMS.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5938</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5938/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

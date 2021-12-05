@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Home/BizFlexer.Master" AutoEventWireup="true" CodeBehind="ReferenceHome.master.cs" Inherits="BzFlexer.SAMS.WebView.Reference.ReferenceHome" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:ContentPlaceHolder ID="head" runat="server">
+      <%--  <link href="../BoostUnit/eCommerce/css/ERMStyles.css" rel="stylesheet" />--%>
+      <%--  <link href="../BoostUnit/eCommerce/css/webforms.css" rel="stylesheet" />--%>
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<%--<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">--%>
+<%--    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+                <div  class="tabcontain" id="Main">
+                    <cc1:TabContainer ID="tabContainerMenuTree" runat="server" AutoPostBack="false" Height="435px">
+                        <cc1:TabPanel ID="TabPanel1" runat="server" HeaderText="Main Menu">
+                            <HeaderTemplate>
+                                Main Menu
+                            </HeaderTemplate>
+                            <ContentTemplate>
+                                <asp:UpdatePanel ID="updatePanelLeftNavigation" runat="server" UpdateMode="Conditional">
+                                    <ContentTemplate>
+
+
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default">
+
+                                                <div id="Div1" class="leftnav" runat="server">
+                                                    <cc1:Accordion ID="accordionModuleMenu" runat="server"
+                                                        class=" panel-group panel panel-default"
+                                                        ContentCssClass="glyphicon-pencil  panel-group panel panel-default panel-body table panel-collapse collapse in"
+                                                        HeaderSelectedCssClass="panel-heading panel-title  glyphicon-folder-close" HeaderCssClass="panel-heading glyphicon-file"
+                                                        SelectedIndex="0" FadeTransitions="true">
+                                                        <Panes>
+                                                        </Panes>
+                                                    </cc1:Accordion>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <%--well--%>
+                                 <%--   </ContentTemplate>
+                                </asp:UpdatePanel>
+                            </ContentTemplate>
+                        </cc1:TabPanel>
+                        <cc1:TabPanel ID="tabProgramTree" runat="server" HeaderText="Program Tree">
+                            <ContentTemplate>
+                                <asp:UpdatePanel ID="updatePanelTreeContent" runat="server" UpdateMode="Conditional">
+                                    <ContentTemplate>
+                                        <asp:ContentPlaceHolder ID="contentPlaceHolderProgramTree" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>--%>
+                                <%--<asp:Panel ID="PanelOrganizationStructure" runat="server">
+                        <asp:TreeView ID="TreeViewBusinessUnit" runat="server" OnSelectedNodeChanged="BuzUnitHierarchyNode_Click"  ShowLines="True"   >
+                        <SelectedNodeStyle BackColor="Yellow" BorderWidth="1" Font-Bold ="true"  ForeColor="Blue"/>
+                        <Nodes>
+                        </Nodes>
+                        </asp:TreeView>
+                    </asp:Panel>--%>
+                         <%--   </ContentTemplate>
+                        </cc1:TabPanel>
+                    </cc1:TabContainer>
+                </div>
+
+            </div>
+
+            <asp:ContentPlaceHolder ID="contentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="col-sm-9 col-md-9">
+                <div class="well">--%>
+                    <%-- <h1>
+                        Accordion Menu With Icon
+                    </h1>
+                    Admin Dashboard Accordion Menu--%>
+                  <%--  <div class="content">
+                        <asp:UpdatePanel ID="updatePanel1" runat="server">
+                            <ContentTemplate>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>--%>
+
+    <%--<div class="content" style="width: 80%">--%>
+    <%--<div class="content">
+        <asp:UpdatePanel ID="updatePanelContentPage" runat="server">
+            <ContentTemplate>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>-
+
+
+</asp:Content>--%>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="tabcontain" id="Main">
+        <cc1:TabContainer ID="tabContainerMenuTree" runat="server" AutoPostBack="false" Height="150px" Width="200px">
+            <cc1:TabPanel ID="TabPanel1" runat="server" HeaderText="Main Menu">
+                <HeaderTemplate>
+                    Main Menu
+                </HeaderTemplate>
+                <ContentTemplate>
+                    <%--<asp:Panel runat="server" ID="Panel1" ScrollBars="Vertical" >--%>
+                    <asp:UpdatePanel ID="updatePanelLeftNavigation" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <div id="Div1" class="leftnav" runat="server">
+                                <cc1:Accordion ID="accordionModuleMenu" runat="server" ContentCssClass="accordionContent"
+                                    HeaderSelectedCssClass="accordionHeaderSelected" HeaderCssClass="accordionHeader"
+                                    SelectedIndex="0" FadeTransitions="true">
+                                    <Panes>
+                                        
+                                    </Panes>
+                                </cc1:Accordion>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <%--</asp:Panel>--%>
+                </ContentTemplate>
+            </cc1:TabPanel>
+            <cc1:TabPanel ID="tabProgramTree" runat="server" HeaderText="Program Tree">
+                <ContentTemplate>
+                    <asp:UpdatePanel ID="updatePanelTreeContent" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <asp:ContentPlaceHolder ID="contentPlaceHolderProgramTree" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                 
+                </ContentTemplate>
+            </cc1:TabPanel>
+        </cc1:TabContainer>
+    </div>
+    <%--<div class="content" style="width: 80%">--%>
+    <div class="content">
+        <asp:UpdatePanel ID="updatePanelContentPage" runat="server">
+            <ContentTemplate>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+</asp:Content>

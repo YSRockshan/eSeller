@@ -1,0 +1,2028 @@
+﻿/* Common */
+/*backg color: #DFFFDF
+#F0E5C7 
+#BA910E
+#7BCF31*/
+
+body
+{
+    margin: 2px;
+    padding: 2px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/
+    font-size: 0.95em;
+    color: #006600;
+    background-color: #ECF3FB;
+}
+
+div.header
+{
+    /*background: #81BEF7; position: absolute; 	top: 0px; 	left: 0px;*/
+    width: 100%;
+    height: 100px;
+    background-image: url(images/HeaderFlash.swf);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #00307B;
+}
+div.SubheaderNew
+{
+    /*background: #81BEF7; position: absolute; 	top: 0px; 	left: 0px;*/
+    float: right;
+    width:179px;
+    height:100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #00307B;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 48px;
+}
+div.SubheaderMenu
+{
+    /*background: #81BEF7; position: absolute; 	top: 0px; 	left: 0px;*/
+    float: left;
+     width: 994px;
+    height:20px;
+    }
+.headerText
+{
+    text-align: left;
+    right: 10px;
+    top: 10px;
+}
+.subheader
+{
+    background: #65A0D8; /*width: 50%;*/
+    height: 20px; /*margin-top:1px;*/
+    color: #EFF5FB;
+    font-size: 10px;
+    text-align: right; /*float: right;*/
+    line-height: 10px;
+}
+.subheader_login
+{
+    background: #3399FF; /*width: 50%; #3399FF*/
+    background-image: url(images/headerLine.jpg);
+    height: 20px; /*margin-top:1px;*/
+    color: #EFF5FB;
+    font-size: 10px;
+    text-align: right; /*float: right;*/
+    line-height: 10px;
+}
+
+/*#SiteMapPath
+{
+    background: #65A0D8;
+    width: 50%;
+    height: 20px;
+    font-size: 12px;
+    float: left;
+}*/
+
+.subheadercontent
+{
+    height: 15px;
+    color: #008000;
+    font-size: 12px;
+    text-align: right;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+.subheaderlink
+{
+    height: 15px;
+    color: #EFF5FB;
+    font-size: 12px;
+    text-align: right;
+    margin-right: 3px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.subheaderdropDownList
+{
+    height: 16px;
+    color: #0B3861;
+    font-size: 10px;
+    text-align: right;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+
+div.mainframecontent
+{
+    background: #ECF3FB; /*#CEE3F6; position: absolute; 	top: 100px; 	left: 150px;*/
+    float: right;
+    width: 80%; /*width:800px;*/ /*height: 480px;*/
+    margin-top: 2px;
+    font-size: 12px;
+    border: #A9D0F5 1px solid;
+    background-color: #DFEDFD;
+}
+
+div.maincontainer
+{
+    height: inherit;
+    background-color: #65A0D8; /*min-height:500px;*/ /*float:top;*/ /*background-color:#71B4E8;*/
+    background-color: #FFFFFE;
+}
+div.maincontainerHeight
+{
+    height: inherit;
+    background-color: #65A0D8; /*min-height:500px;*/ /*float:top;*/ /*background-color:#71B4E8;*/
+    background-color: #FFFFFE;
+    height: 80%;
+}
+.menuitemHead
+{
+    font: bold Verdana, Arial, sans-serif;
+    padding-left: 1em;
+    padding-right: 1em; /*background-color:Orange;*/
+    text-align: center;
+}
+.menuitemSub
+{
+    font: Verdana, Arial, sans-serif;
+    padding-left: 1em;
+    padding-right: 1em; /*background-color:Orange;*/
+    text-align: left;
+    border-style: double;
+    border-width: medium;
+    border-color: White;
+}
+
+div.leftnav
+{
+    background: #F0E5C7; /*#58ACFA;#D1E2F4; #CEE3F6; #A9D0F5; position: absolute; 	top: 100px; 	left: 0px;*/
+    float: left;
+    width: 185px; /*height: 100%;*/ /*min-height:480px;*/
+    display: block;
+    margin-top: 2px;
+}
+div.tabcontain {
+    background: #383742; /*#F0E5C7; #58ACFA;#D1E2F4; #CEE3F6; #A9D0F5; position: absolute; 	top: 100px; 	left: 0px;*/
+    float: left;
+    width: 20%; /*height: 470px; /*min-height:480px;*/
+    display: block;
+    /*margin-top: 2px;*/
+    margin-left: 125px;
+    min-height: 470px;
+}
+
+div.tabcontain1
+{
+    /*background: #65A0D8; /*#58ACFA;#D1E2F4; #CEE3F6; #A9D0F5; position: absolute; 	top: 100px; 	left: 0px;*/
+    float: right; /*width: 20%;*/
+    height: 200px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+div.Menubar
+{
+    background: #42A442; /*#008000; background: #65A0D8; #58ACFA;#D1E2F4; #CEE3F6; #A9D0F5; position: absolute; 	top: 100px; 	left: 0px;*/
+    width: 100%;
+    font-weight: 500;
+}
+div.content {
+    background: #ECF3FB; /*#CEE3F6; position: absolute; 	top: 100px; 	left: 150px;*/
+    float: none;
+    width: 794px; /*width:800px;*/ /*height: auto;*/
+    margin-top: 2px;
+    font-size: 12px;
+    overflow: auto;
+    min-height: 470px;
+    background-color: #383742;; /*height: 20px; #EAFFFF */
+}
+
+/*div.footer
+{
+    margin-top: 2px;
+    background: #65A0D8; /*#81BEF7; position: absolute; 	top: 500px; 	left: 0px;*/
+    /*clear: both;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #EFF5FB;
+    border: solid 1px #65A0D8;
+    padding-top: 2px;
+}*/
+div.footer_login
+{
+    margin-top: 2px;
+    background: #3399FF; /*#00CC66; #81BEF7; position: absolute; 	top: 500px; 	left: 0px;*/
+    background-image: url(images/headerLine.jpg);
+    clear: both;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #EFF5FB;
+    border: solid 1px #65A0D8;
+    padding-top: 2px;
+}
+div.formtitle {
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #a9d0f5; /* #0B3861;*/
+    font-size: 18px;
+    font-weight: bold;
+    width: 300;
+    font-family: /*Arial, Helvetica, sans-serif;*/ Georgia;
+    text-align: center;
+}
+
+
+div.formSubtitle
+{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #0B3861;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.errormessage
+{
+    color: Red; /*float: left;     display: block;*/
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.programmenutab
+{
+    min-height: 435px;
+    font-size: 12px;
+    border: #A9D0F5 1px solid;
+}
+
+.okmessage {
+    color: #a9d0f5; /* #3B7CB0; /* #8ABAE0; /*#356AA0;*/
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* .errormessage
+{
+    color: red; #8ABAE0; /*#356AA0;*/
+/*font-weight:bold;
+}*/
+
+
+/* end of common styles */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* erims home and login */
+
+.homepagebackground
+{
+    border: #A9D0F5 1px solid;
+    background-color: #DFEDFD; /*#F0E5C7 #DFFFDF;*/
+    margin: auto;
+    width: 988px;
+}
+
+div.homeleftnav
+{
+    float: left;
+    width: 40%;
+}
+div.homeleftnavContain
+{
+    float: left;
+    width: 60%;
+    height: 80%;
+}
+div.homecontent
+{
+    float: right;
+    width: 58%;
+    padding-top: 15px;
+    margin-left: 5px; /*position:absolute; 	top:70px; 	left:30%;*/ /*text-align:right;*/
+}
+div.homecontentLogin
+{
+    float: right;
+    width: 35%;
+    padding-top: 15px;
+    margin-left: 5px; /*position:absolute; 	top:70px; 	left:30%;*/ /*text-align:right;*/
+}
+div.trialregister
+{
+    /*background-color:#E0ECF8;*/
+    margin-left: 2px; /*margin-top:50%;*/
+    width: 87%;
+    padding-top: 5px;
+    text-align: center;
+    height: 280px;
+    color: #0B3861;
+}
+
+
+.button_demo
+{
+    background-image: url(images/demo.gif);
+    border: medium none;
+    cursor: pointer;
+    color: #006666;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    width: 160px;
+    margin-top: 10px;
+}
+
+.button_register
+{
+    background-image: url(images/register.gif);
+    border: medium none;
+    cursor: pointer;
+    color: #008080;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    width: 160px;
+}
+
+div.login
+{
+    /*background-color:#E0ECF8;  color: #0B3861;*/
+    border: thin solid #D7EBFF;
+    margin-left: 2px;
+    width: 100%;
+    padding-top: 5px;
+    color: #005DBD;
+    font-size: 12px;
+    background-color: /*#9BE051;*/ #C3DAE8;
+    font-weight: bold;
+}
+
+.labelloginerror
+{
+    color: Red; /*float: left;*/
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+/* end of erims home and login styles */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* registration page */
+
+div.register
+{
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #CCFFCC;
+    border: #A9D0F5 1px solid;
+    margin-bottom: 5%; /*float: left;*/
+    height: 800px;
+    color: #33CC33;
+}
+
+.registerwizard
+{
+    position: relative;
+    margin-left: 10px;
+    width: 30%;
+    float: left;
+}
+
+fieldset.register
+{
+    /*background-color:#D1E2F4;*/
+    position: relative;
+    border: #A9D0F5 1px solid;
+    padding: 10px;
+    width: 93%;
+    height: 90%; /*margin-right:3px;*/
+    float: left;
+    margin: auto;
+}
+
+/* end of registration page styles */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* menu accordion styles */
+
+/*------------------*/
+
+.accordionHeader {
+    border: 0px solid #2F4F4F;
+    color: #E9F6FE; /*#0B3861;*/
+    background-color: #383742; /*#E1E1E1; #F9FFEE; /*#2E4d7B;  #008000;*/
+    font-family: Arial, Helvetica, sans-serif; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px; /*5px;*/
+    margin-top: 1px; /*5px;*/
+    cursor: pointer; /*height: 14px;*/
+}
+
+.accordionHeaderSelected {
+    border: 0px solid #2F4F4F;
+    color: #81bef7; /* #356AA0; /* #FFFFFF;/* #000000;*/
+    background-color: #383742; /*#CBDCEE;  #8ABAE0; /* #356AA0;/*#8DB7E2;/* #F4F8FD; #7BCF31*/
+    font-family: Arial; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px; /*5px;*/
+    margin-top: 3px; /*5px;*/
+    cursor: pointer; /*height: 14px;*/
+}
+
+.accordionContent {
+    background-color: #a9d0f5; /* White; #FFFFFF; #FCFAF6; /* #D3DEEF; #F0E5C7; */
+    font-size: 12px; /*font-weight: bold;*/
+    border: 0px;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+    font-family: Tahoma; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/ /*cursor: pointer;*/
+    color: #99000e;
+}
+
+.programTreeContent
+{
+    background-color: #F0E5C7; /* #FFFFFF; #FCFAF6; /* #D3DEEF;*/
+    font-size: 12px; /*font-weight: bold;*/
+    border: 0px;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+    font-family: Arial; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    min-height: 420px;
+    color: #008000;
+    overflow: auto;
+}
+
+/*------------------------*/
+
+/* end of Sub menu accordion styles */
+
+
+/* Program Tree */
+
+/* ---------------------------*/
+
+.programtree
+{
+    height: 435px;
+    overflow: scroll;
+    background-color: #A3CBF8;
+    font-size: 12px;
+    border: 0px;
+    border-top: none; /*padding: 5px;*/
+    padding-top: 5px;
+    font-family: Arial;
+    color: #0B3861;
+}
+
+/* ---------------------------*/
+
+/* End of Program Tree */
+
+
+/* Sub menu accordion styles */
+
+/*------------------*/
+
+.accordionHeaderSub
+{
+    border: 0px solid #0B3861;
+    color: #0D467A;
+    background-color: #00FF00; /*#E1E1E1; #F9FFEE; /*#2E4d7B;*/
+    font-family: Arial; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px; /*5px;*/
+    margin-top: 1px; /*5px;*/
+    cursor: pointer; /*height: 14px;*/
+}
+
+.accordionHeaderSelectedSub
+{
+    border: 0px solid #2F4F4F;
+    color: #4A05FA; /* #356AA0; /* #FFFFFF;/* #000000;*/
+    background-color: #00CC66; /*#CBDCEE;  #8ABAE0; /* #356AA0;/*#8DB7E2;/* #F4F8FD;*/
+    font-family: Arial; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px; /*5px;*/
+    margin-top: 3px; /*5px;*/
+    cursor: pointer; /*height: 14px;*/
+}
+
+.accordionContentSub
+{
+    background-color: #D1E2F4; /* #FFFFFF; #FCFAF6; /* #D3DEEF;*/
+    font-size: 11px;
+    font-weight: bold;
+    border: 0px;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    cursor: pointer;
+}
+
+/*------------------------*/
+
+/* end of Sub menu accordion styles */
+
+/* form */
+
+hr
+{
+    border: #A9D0F5 1px solid;
+    height: 1px; /*padding: 10px;*/
+    width: 100%; /*height:90%; 	border-color:Gainsboro;      border-width:1px;      border-style:solid; */ /*padding: 3px 3px 3px 3px;*/ /*margin: auto;*/
+}
+
+fieldset
+{
+    border: #A9D0F5 1px solid;
+    padding: 10px;
+    width: 95%; /*height:90%; 	border-color:Gainsboro;      border-width:1px;      border-style:solid; */
+    padding: 3px 3px 3px 3px;
+    margin: auto; /*height: 62px;*/
+}
+
+fieldset.groupbox
+{
+    width: 90%;
+    margin: auto;
+}
+
+ul.form {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #a9d0f5;
+}
+ul.loginform
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: /*#9BE051;*/ #008000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+legend
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #0B3861;
+}
+
+.mandatoryfield
+{
+    margin-left: 2px;
+    color: #FF0000;
+    font-size: 12px;
+}
+
+.legendlabel_size1
+{
+    /*height: 15px;*/
+    text-align: right;
+    margin-right: 15px;
+    float: left;
+    display: block;
+    width: 150px;
+    font-size: 12px;
+    margin-top: 0.5%;
+    font-family: Arial; /*margin-bottom:3%;*/
+}
+
+.legendlabel_size2 {
+    /*height: 15px;*/
+    text-align: right;
+    margin-right: 15px;
+    float: left;
+    display: block;
+    width: 200px;
+    font-size: 12px;
+    margin-top: 0.5%;
+    font-family: Verdana;
+    color: #99000e;
+}
+
+.legendlabel_sizeaddressbox
+{
+    text-align: left;
+    margin-left: 15px;
+    float: left;
+    display: block;
+    width: 200px;
+    font-size: 12px;
+}
+
+.legendlabel_size3
+{
+    /*height: 15px;*/
+    text-align: right;
+    margin-right: 15px;
+    float: left;
+    display: block;
+    width: 100px;
+    font-size: 12px;
+    margin-top: 0.5%; /*margin-bottom:3%;*/
+}
+.legendlabel_size3_left
+{
+    /*height: 15px;*/
+    text-align: left;
+    margin-right: 15px;
+    float: left;
+    display: block;
+    width: 100px;
+    font-size: 12px;
+    margin-top: 0.5%;
+    font-weight: bold;
+    color: #FFFFFF; /*margin-bottom:3%;*/
+}
+.legendlabel_size3_left_white
+{
+    /*height: 15px;*/
+    text-align: left;
+    margin-left: 15px;
+    float: left;
+    display: block;
+    width: 60px;
+    font-size: 12px;
+    margin-top: 0.5%;
+    font-weight: bold;
+    color: #FFFFFF; /*margin-bottom:3%;*/
+}
+.legendlabel_size4
+{
+    text-align: right;
+    margin-right: 15px;
+    float: left;
+    display: block;
+    width: 500px;
+    font-size: 12px;
+    margin-top: 0.5%; /*margin-bottom:3%;*/
+}
+
+.legendlabel_size5
+{
+    text-align: left;
+    margin-left: 5px;
+    float: left;
+    display: block;
+    width: 30px;
+    font-size: 12px;
+    margin-top: 0.5%; /*margin-bottom:3%;*/
+}
+
+.radiobuttons
+{
+    text-align: left; /*margin-left: 30%; float: left; 	display: block;*/ /*width: 200px;*/
+    font-size: 12px;
+    font-family: Arial;
+    color: #003399;
+}
+.radioButtonFont
+{
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.radiobuttons2
+{
+    text-align: left;
+    margin-left: 5%; /*float: left; 	display: block;*/ /*width: 200px;*/
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.radiobuttonsParaVal
+{
+    text-align: left; /*margin-left: 5%; /*float: left; 	display: block;*/ /*width: 200px;*/
+    font-size: 12px;
+}
+
+.textbox_customsize
+{
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+}
+
+.textbox_size1
+{
+    width: 150px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+}
+
+.textbox_size1sp
+{
+    width: 150px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0000FF;
+    margin-top: 1px;
+    background-color: #CCCCCC;
+}
+
+.textbox_size3
+{
+    width: 100px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+}
+.textbox_size2
+{
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+}
+
+.textbox_Message_Error
+{
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #FF0000;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+.textbox_Message_Ok
+{
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial, /* Helvetica, sans-serif;  Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/ border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #00FF00;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+.textbox_Message_Normal
+{
+    border-style: none;
+    border-color: #FFFFFF;
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial, /* Helvetica, sans-serif;  Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/ border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #000000;
+    margin-top: 1px;
+    font-weight: normal;
+    background-color: #FFFFFF;
+}
+.textbox_size2Upper
+{
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+    text-transform: uppercase;
+}
+
+.textbox_Error
+{
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/
+    color: red; /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/ /*color: #0B3861;*/
+    margin-top: 1px;
+}
+
+
+.textbox_UpperCase
+{
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+    text-transform: uppercase;
+}
+.textbox_sizeSmall
+{
+    width: 75px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+}
+
+.textbox_sizeaddressbox
+{
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+    margin-left: 15px;
+}
+
+.disable_textbox1
+{
+    /*height:15px;*/
+    border: solid 1px #AFB1B2;
+    font-size: 12px;
+    background-color: #E1E1E1;
+    color: #0B3861;
+}
+
+.value_label
+{
+    font-size: 12px;
+}
+
+.dropdownlist_size
+{
+    width: 202px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+    margin-top: 1px;
+}
+
+.button_normal {
+    font-size: 11px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/ /*background-color:#A9D0F5;*/
+    background-image: url(images/button_new.png);
+    border: medium none;
+    cursor: hand;
+    color: #81bef7; /*#0B3861*/
+    height: 20px;
+    background-repeat: no-repeat;
+    background-color: #383742;
+    width: 70px; /*font-weight: normal;*/
+    text-align: center;
+}
+
+.button_Login
+{
+    font-size: 11px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/ /*background-color:#A9D0F5;*/
+    background-image: url(images/button_new.png);
+    border: medium none;
+    cursor: hand;
+    color: #0B3861;
+    height: 20px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-color: #CCFFCC;
+    width: 70px; /*font-weight: normal;*/
+    text-align: center;
+    border-top-color: Black;
+}
+.button_Demo
+{
+    font-size: 11px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/ /*background-color:#A9D0F5;*/
+    background-image: url(images/demo.png);
+    border: hi;
+    cursor: hand;
+    color: #0B3861;
+    height: 20px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-color: #CCFFCC;
+    width: 70px; /*font-weight: normal;*/
+    text-align: center;
+    border-top-color: Black;
+}
+
+.button_long
+{
+    font-size: 11px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/ /*background-color:#A9D0F5;*/
+    background-image: url(images/button.png);
+    border: medium none;
+    cursor: hand;
+    color: #0B3861;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-color: #e4e4f5;
+    width: 200px; /*font-weight: normal;*/
+    text-align: center;
+}
+
+.button_browse
+{
+    font-size: 11px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/ /*background-color:#A9D0F5;*/
+    background-image: url(images/buttonbrowse.png);
+    border: medium none;
+    cursor: hand;
+    color: #FFFFFF;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-color: #e4e4f5;
+    width: 23px; /*font-weight: normal;*/
+    text-align: center;
+}
+
+.button_long
+{
+    font-size: 11px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/ /*background-color:#A9D0F5;*/
+    background-image: url(images/long_button.png);
+    border: medium none;
+    cursor: hand;
+    color: #0B3861;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-color: #e4e4f5;
+    width: 150px; /*font-weight: normal;*/
+    text-align: center;
+}
+div.featuresMain
+{
+    border: thin groove #000000;
+}
+div.gridfield
+{
+    margin-left: 3px; /*margin-right:2%;*/
+}
+
+div.btnyear
+{
+    position: absolute;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+div.input_accordion_panes
+{
+    margin-left: 3px; /*margin-right:3%;*/
+}
+
+div.accordionPanesModuleParameter
+{
+    margin-left: 15px; /*margin-right:3%;*/
+}
+div.formfield2
+{
+    padding-top: 2px;
+    margin-bottom: 2px; /*background-color: Yellow;*/
+    width: 107%;
+}
+
+div.formfield
+{
+    padding-top: 2px;
+    margin-bottom: 2px; /*background-color: Yellow;*/
+    width: 98%;
+}
+
+div.ImageBox
+{
+    background-color: #CCFFCC;
+    float: right;
+    width: 155px;
+    height: 150px;
+}
+
+div.DetailBox
+{
+    background-color: #CCFFCC;
+    float: left;
+    width: 570px;
+    height: 300px;
+}
+
+div.formfieldModuleParameter
+{
+    /*position: absolute;*/ /*padding-top: 0px;*/ /*margin-top: 150px; /*background-color: Yellow;*/ /*margin-left:5px;*/
+    width: 98%;
+    height: auto;
+}
+
+div.formfield1
+{
+    /*position: absolute;*/
+    padding-left: 2px; /*padding-bottom:5px;*/ /*margin-top: 5px;     margin-left: 0px;      /*background-color: Yellow;*/
+    width: 3%;
+    height: 70px;
+}
+
+div.formlable
+{
+    padding-top: 2px;
+    margin-bottom: 2px; /*background-color: Yellow;*/
+    width: 98%;
+}
+
+div.formlable1
+{
+    padding-top: 2px;
+    margin-bottom: 2px; /*background-color: Yellow;*/
+    width: 102%;
+}
+
+div.FormLable4
+{
+    position: absolute;
+    float: left;
+    width: 750px;
+    margin-top: 2px;
+    margin-left: 0px;
+    font-size: 12px;
+    padding: 3px;
+    font-family: Arial;
+}
+
+div.RadioButton
+{
+    position: absolute;
+    float: left; /*width: 200px;*/ /*height: 100px;*/ /*margin-top: 4px;*/
+    margin-top: 4px;
+    margin-left: 150px;
+    font-size: 12px;
+    vertical-align: top;
+    vertical-align: text-top;
+}
+div.RadioButton2
+{
+    position: absolute;
+    float: left; /*width: 425px;     height: 100px;*/
+    margin-top: 4px;
+    margin-left: 362px;
+    font-size: 12px;
+}
+
+div.FormLable2
+{
+    position: absolute;
+    float: left;
+    width: 425px;
+    height: 100px;
+    margin-top: 48px;
+    margin-left: 360px;
+    font-size: 12px;
+}
+
+div.FormLable3
+{
+    /*position: absolute;*/
+    float: left;
+    width: 790px;
+    margin-top: 2px;
+    margin-left: 0px;
+    font-size: 12px;
+    padding: 2px;
+}
+
+div.FormLableParameterValue
+{
+    /*position: inherit;*/ /*float: left;*/
+    width: 790px;
+    margin-top: 7px;
+    margin-left: 0px; /*font-size: 12px;*/ /*padding: 2px;*/
+}
+
+div.FormLablePosition
+{
+    /*position: absolute;     float: left;*/
+    margin-top: 2px;
+    margin-left: 99px;
+}
+div.buttonlist1
+{
+    /*background-color:#A9D0F5;*/
+    margin-top: 4px;
+    padding: 3px;
+    margin-left: 160px;
+    width: inherit;
+}
+
+div.buttonlist2
+{
+    /*background-color:#A9D0F5;*/
+    margin-top: 4px;
+    padding: 3px;
+    margin-left: 210px;
+    width: inherit;
+}
+
+div.buttonlist3
+{
+    /*background-color:#A9D0F5;*/
+    margin-top: 4px;
+    padding: 3px;
+    margin-left: 110px;
+    width: inherit;
+}
+
+div.buttonlist4
+{
+    /*background-color:#A9D0F5;*/
+    margin-top: 4px;
+    padding: 3px;
+    margin-left: 510px;
+    width: inherit;
+}
+
+div.buttonlist5
+{
+    /*background-color:#A9D0F5;*/
+    margin-top: 4px;
+    padding: 3px;
+    width: inherit;
+    text-align: center;
+}
+/*div.buttonlist6
+{
+   
+    width: 320px;
+    text-align: center;
+    margin-left:10px;
+    margin-top:353px;
+}
+div.buttonlist7
+{
+    margin-top: 353px;
+    padding: 3px;
+    margin-left: 210px;
+    width: 228px;
+}*/
+div.buttonlist8
+{
+    /*background-color:#A9D0F5;*/ /*position: absolute;*/
+    float: left;
+    margin-top: 80px;
+    margin-left: 17px;
+    width: 230px;
+    height: 20px;
+}
+
+div.buttonlist9
+{
+    /*background-color:#A9D0F5;     position: absolute;*/
+    float: left;
+    margin-top: 20px;
+    margin-left: 460px;
+    width: 228px; /*height:20px; */
+}
+
+div.buttonlist10
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute;
+    float: left;
+    margin-top: 180px;
+    margin-left: 15px;
+    width: 152px;
+    height: 20px;
+}
+div.buttonlist11
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute;
+    float: left;
+    margin-top: 180px;
+    margin-left: 548px;
+    width: 230px;
+    height: 20px;
+}
+
+div.buttonlist12
+{
+    /*background-color:#A9D0F5;*/ /*position: absolute;*/
+    float: left; /*margin-top: 25px;     margin-left: 548px;*/
+    width: 230px;
+    height: 20px;
+}
+
+div.buttonlist13
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute;
+    float: left;
+    margin-top: 300px;
+    margin-left: 15px;
+    width: 230px;
+    height: 20px;
+}
+
+div.buttonlist14
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute;
+    float: left;
+    margin-top: 300px;
+    margin-left: 550px;
+    width: 230px;
+    height: 20px;
+}
+
+div.buttonlist1ParameterValue
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 152px;
+    height: 20px;
+}
+
+div.buttonlist2ParameterValue
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute;
+    float: left;
+    margin-top: 20px;
+    margin-left: 545px;
+    width: 230px;
+    height: 20px;
+}
+
+div.buttonApplyModuleParameter
+{
+    /*position: absolute;*/
+    float: left;
+    margin-top: -27px;
+    margin-left: 560px;
+    width: 74px;
+    height: 20px;
+}
+
+div.buttonlist1ModuleParameter
+{
+    margin-top: 4px;
+    padding: 3px;
+    margin-left: 270px;
+    width: inherit;
+}
+
+div.branchBottom
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute;
+    float: left;
+    margin-top: 80px;
+    margin-left: 430px;
+    width: 230px;
+    height: 100px;
+    font-size: 12px;
+    font-family: Arial;
+}
+div.branchBottomButton
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute; /*float: left;*/
+    margin-top: 120px;
+    margin-left: 500px;
+    width: 155px;
+    height: 20px;
+}
+
+div.AddTownButton
+{
+    /*background-color:#A9D0F5;*/
+    position: absolute; /*float: left;*/
+    margin-top: 125px;
+    margin-left: 665px;
+    width: 75px;
+    height: 20px;
+}
+
+.textarea
+{
+    width: 250px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+}
+
+.select
+{
+    /*width: 200px;*/
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+}
+.selectDropDown
+{
+    width: 228px;
+    font-size: 12px;
+    font-family: Arial; /* Georgia, Verdana, Arial, Helvetica, sans-serif;*/ /*letter-spacing: 0.05em;*/
+    border: solid 1px #CEE3F6; /*color: #045FB4;*/
+    color: #0B3861;
+}
+/* end of form styles */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Main frame module buttons */
+
+.modulebutton_GlobalData
+{
+    background-image: url(images/GlobalData_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat; /*background-color: #ECF3FB;*/
+    background-color: #FFFFFF;
+}
+
+.modulebutton_Admin
+{
+    background-image: url(images/Admin_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_epeople
+{
+    background-image: url(images/epeople_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_erelations
+{
+    background-image: url(images/erelations_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_estocks
+{
+    background-image: url(images/estocks_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.modulebutton_AD
+{
+    background-image: url(images/SE_L.png); /*url(images/AD_L.png);*/
+    width: 150px;
+    height: 150px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.modulebutton_GDT
+{
+    background-image: url(images/General.png);
+    width: 154px;
+    height: 151px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.modulebutton_SEC
+{
+    background-image: url(images/Security.png);
+    width: 154px;
+    height: 151px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.modulebutton_SRP
+{
+    background-image: url(images/SalesRep.png);
+    width: 154px;
+    height: 151px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_RPT
+{
+    background-image: url(images/Report.png);
+    width: 154px;
+    height: 151px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_eassets
+{
+    background-image: url(images/eassets_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_eprocure
+{
+    background-image: url(images/eprocure_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_esales
+{
+    background-image: url(images/esales_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_efactory
+{
+    background-image: url(images/efactory_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_echain
+{
+    background-image: url(images/esales_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_efinance
+{
+    background-image: url(images/efinance_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.modulebutton_epay
+{
+    background-image: url(images/epay_m.gif);
+    width: 80px;
+    height: 80px;
+    border: medium none;
+    cursor: hand;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+div.securitycorp
+{
+    /*background: #ECF3FB; #CEE3F6; position: absolute; 	top: 100px; 	left: 150px;*/
+    position: absolute;
+    float: left;
+    width: 300px;
+    height: 150px;
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+div.peoplerelations
+{
+    position: absolute;
+    float: left;
+    width: 300px;
+    height: 150px;
+    margin-top: 140px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+div.transactionmodules
+{
+    /* position: absolute ;*/
+    float: right;
+    width: 100px; /*902px*/
+    height: 430px; /*450px*/
+    margin-top: 2px;
+    margin-left: 500px; /*320px*/
+    font-size: 12px;
+    top: 148px;
+    left: auto; /*-183px*/
+    background-color: #DFEDFD;
+}
+
+.fieldsetMain
+{
+    border-color: #99CCFF;
+    border-top-style: groove;
+    border-right-width: thin;
+    border-right-style: groove;
+    border-bottom-width: thin;
+    border-bottom-style: groove;
+    border-left-width: thin;
+    border-left-style: groove;
+}
+
+
+/* end of form styles */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* grid styles */
+
+.GridHeading /* top header */
+{
+    text-decoration: none;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: Navy; /* #2E4d7B;*/
+    border-bottom-color: Navy; /* #2E4d7B;*/
+    background-color: #CBDCEE;
+    font-family: Arial; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    font-weight: bold;
+    font-size: 12px;
+    color: #356AA0; /* #356AA0; #3B7CB0; */
+    height: 22px;
+}
+.GridHeader {
+    border-style: none;
+    color: #000000;
+    background-color: #383742; /*#BDE798; #336699*/ /* #BA910E;#AAFFD5; #8ABAE0; */
+    height: 22px;
+    font-size: 11px;
+    font-family: Arial; /* Arial; Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    text-align: center;
+}
+
+.GridFooter
+{
+    color: Navy;
+    background-color: #E1E1E1;
+    font-family: Arial; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.AltRowStyle {
+    background-color: #9ba0a6; /* #E4F5D6; */ /*#F3F9FF;  #ffffff;*/
+    color: #333333;
+    border-right-color: #EBEBEB;
+    border-bottom-color: #EBEBEB;
+    font-size: 12px;
+}
+
+.RowStyle {
+    background-color: #a9d0f5; /*#FFFFFF;*/
+    color: /* #333333;*/ #000000;
+    border-right-width: thin;
+    border-right-color: #EBEBEB;
+    border-bottom-color: #EBEBEB;
+    font-size: 12px;
+}
+.ColStyle
+{
+    background-color: #FCFAF6; /* #FCFAF6; */
+    color: /* #333333;*/ #000000;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #C0C0C0;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #C0C0C0;
+    border-color: #ECE9D8;
+    font-family: Arial; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+    text-align: left;
+    width: 98%;
+}
+
+    .ColStyle caption {
+        border: 0px solid #2F4F4F;
+        color: #E9F6FE; /*#0B3861;*/
+        background-color: #a9d0f5; /*#E1E1E1; #F9FFEE; /*#2E4d7B; #008000;*/
+        font-family: Arial; /* Tahoma, Verdana, Helvetica, Sans-Serif;*/
+        font-size: 12px;
+        font-weight: bold;
+        padding: 3px; /*5px;*/
+        margin-top: 1px; /*5px;*/
+    }
+
+.EditRowStyle
+{
+    color: #ffffff;
+    background-color: #C0C0C0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.SelectedRowStyle
+{
+    background-color: #008ED2; /* #FDFDDB; */
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.MainGrid
+{
+    padding: 0;
+    color: #000000;
+}
+
+.MainGrid1
+{
+    padding: 10;
+    color: #000000; /*Height:250px; */ /*margin-top: 90px;*/ /*margin-left: 17px;*/
+}
+.MainGrid2
+{
+    padding: 10;
+    color: #000000;
+    height: 230px; /*margin-top: 50px;*/
+    margin-left: 15px;
+}
+
+.MainGrid3
+{
+    padding: 10;
+    color: #000000;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.ModuleParameterGrid
+{
+    /*position:absolute;*/ /*padding: 10;*/
+    color: #000000;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 13px; /*overflow:auto;*/
+}
+
+.ParameterValueGrid
+{
+    /*padding: 2;*/
+    color: #000000; /*position: absolute;*/ /*float: left;     width: 780px;*/
+    height: inherit;
+    margin-top: 5px;
+    margin-left: 15px; /*font-size: 12px;*/
+}
+
+.SubGrid
+{
+    padding: 0;
+    color: #000000;
+    position: absolute;
+    float: left;
+    width: 795px;
+    height: 70px;
+    margin-top: 83px;
+    margin-left: 0px; /*font-size: 12px;     min-height : 50px;     overflow:auto;*/
+}
+
+.GridSearchBtn
+{
+    border: 1px solid #AFB1B2;
+    padding: 0px;
+    margin: 0px;
+    font-size: 9px; /* smaller;*/
+    height: 15px;
+    width: 22px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #E1E1E1;
+}
+.GridSearchBtnAll
+{
+    border: 1px solid #AFB1B2;
+    padding: 0px;
+    margin: 0px;
+    font-size: 9px; /* smaller;*/
+    height: 15px;
+    width: 3.5%;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #E1E1E1;
+}
+a {
+    color: #99000e;
+    text-decoration: none;
+    font-family: Arial;
+    text-align: right;
+}
+th
+{
+    color: /* #356AA0*/ #FFFFFF;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+/* end of grid styles */
+
+/* Content*/
+.HeaderContent
+{
+    position: absolute;
+    left: 200px;
+    font-family: Arial;
+    text-align: left;
+}
+
+.InfoContent
+{
+    position: relative;
+    width: 78%;
+    height: 700px; /*left: 8px;*/
+    top: 10px;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    float: right;
+    border: 1px solid #CCCCCC;
+}
+
+.StructureContent
+{
+    position: relative;
+    width: 20%;
+    height: 700px;
+    left: 8px;
+    top: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #CCCCCC;
+    float: left;
+}
+.StructureContentBox
+{
+    position: relative;
+    width: 5px;
+}
+
+
+.InfoContact
+{
+    position: relative;
+    width: 48%;
+    height: 100px;
+    right: 8px;
+    top: 5px;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    float: right;
+    border: 1px solid #CCCCCC;
+}
+
+.AddressContact
+{
+    position: relative;
+    width: 48%;
+    height: 100px;
+    left: 8px;
+    top: 5px;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #CCCCCC;
+    float: left;
+}
+
+.ButtonPanel
+{
+    position: relative; /*width: 55%;     height: 10px;*/
+    left: 180px;
+    top: 5px;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold; /*border: 1px solid #CCCCCC;*/
+    float: left;
+}
+
+/*Style for the text content in home page*/
+#TopContent
+{
+    position: relative;
+    float: left;
+    width: 650px; /*height: 91px;*/
+    left: 53px;
+    top: 87px;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+}
+#MiddleContent
+{
+    position: relative; /*float: right;*/
+    width: 600px; /*height: 150px;*/
+    left: 53px;
+    top: 104px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+}
+/*End Content*/
+
+/*Style for the Backgroung Image in home page*/
+div.BackImage
+{
+    /*background-image: url(images/modulehomebgimage.jpg);*/ /*background-position:top;*/ /*background-color:#71B4E8;*/ /*height:470px;*/
+}
+/*End Content*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* Home Front Module Introduction */
+
+.erimshomeheader
+{
+    text-align: left;
+    color: #2B7DC9;
+}
+
+.erimshomesubheader
+{
+    text-align: right;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #4C79A8;
+    background-color: #00CC99;
+}
+
+ul.features
+{
+    margin-left: 10px;
+    padding: 5px;
+    list-style-type: none;
+    color: #000000;
+}
+
+li.featurefield
+{
+    padding-top: 2px;
+    margin-bottom: 2px;
+    width: 98%;
+}
+
+p.erimsintro
+{
+    text-align: justify;
+    width: 96%;
+    margin-top: 3px;
+}
+pre.sfcontent
+{
+    text-align: justify;
+    width: 96%;
+    margin-top: 3px;
+    font-size: medium;
+}
+
+
+/*--------------------------------*/
+
+/* -------- Modal Popup Control -------------- */
+
+.modalPopup
+{
+    background-color: #FFFFFF;
+    color: Navy;
+    cursor: default;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 10px;
+    text-align: left;
+    vertical-align: middle;
+    border-width: 2px;
+    border-style: solid;
+    border-color: Gray;
+}
+
+.modalBackground
+{
+    background-color: Gray; /*filter:alpha(opacity=70); 	-moz-filter: alpha(opacity=70); 	-moz-opacity: 0.7; 	background-color: #E1EEF6;*/
+    -moz-filter: alpha(opacity=70);
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    z-index: 999;
+}
+
+.modalHeader
+{
+    background-color: #8ABAE0;
+    color: #FFFFFF;
+    cursor: move;
+    border: solid 1px Gray;
+    padding-top: 3px;
+}
+
+.SysModule
+{
+    color: #000080;
+    font-family: Impact;
+    font-size: x-large;
+}
+
+.SysModulemini
+{
+    color: #000080;
+    font-family: Impact;
+    font-size: small;
+}
+
+.genarateId
+{
+    border-style: none;
+    border-color: #0066FF;
+    background-color: #3366CC;
+    color: #FFFFFF;
+}
+
+.messageText
+{
+    border-style: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-style: italic;
+    width: auto;
+    height: auto;
+    position: relative;
+    z-index: auto;
+}
+
+/*  End of Modal Popup Control ------- */
+

@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="eSeller.master.cs" Inherits="BzFlexer.SAMS.WebView.Home.BizFlexer" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  <title>eSeller | Office </title>
+
+    <%--Loader--%>
+    <script language="javascript" type="text/javascript">
+        //<![CDATA[
+        function HandleClose() {
+            alert("Killing the session on the server!!");
+            PageMethods.AbandonSession();
+        }
+        //]]>
+    </script>
+    <%--Loader--%>
+<%--    <link href="../BoostUnit/bootstrap/bootstrap-3.3.7-dist/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../BoostUnit/bootstrap/bootstrap-3.3.7-dist/css/btn.css" rel="stylesheet" />--%>
+ 
+
+    
+    <%-- <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />--%>
+    <%--<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.css" rel="stylesheet" />--%>
+    <%-- <link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />--%>
+    <%-- <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />--%>
+
+    <%--nav--%>
+<%--    <link href="../BoostUnit/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />--%>
+    <link href="../BoostUnit/eCommerce/css/BzStyles.css" rel="stylesheet" />
+    <%--head-foot--%>
+    <link href="../BoostUnit/eCommerce/css/NBstyle.css" rel="stylesheet" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../BoostUnit/eCommerce/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../BoostUnit/eCommerce/js/login.js"></script>
+    
+
+    <%-- <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>--%>
+
+
+
+
+
+    <%--Loader--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--Loader--%>
+</head>
+<body>
+    <%--Loader--%>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" AsyncPostBackTimeout="5000">
+        </asp:ScriptManager>
+        <%--Loader--%>
+        <div class="product-header">
+            <div class="wrap">
+
+                <asp:UpdatePanel ID="updatePanel2" runat="server">
+                    <ContentTemplate>
+
+                        <div class="header-top">
+                            <div class="header-left">
+                                <div class="product-logo">
+                                    <a href="#">
+                                        
+                                        <img src="../BoostUnit/eCommerce/images/BizFlexer logo.png" alt="" /></a>
+                                </div>
+
+                                <div class="cssmenu">
+                                    <ul>
+                                         <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                                    <PathSeparatorStyle BorderColor="#FFFFFF" />
+                                    <CurrentNodeStyle ForeColor="#FFFFFF" />
+                                    <NodeStyle ForeColor="#FFFFFF" />
+                                </asp:SiteMapPath>
+                                     <%--   <li><a href="index.html"><span>Home</span></a></li>
+                                        <li class="active"><a href="products.html"><span>Products</span></a></li>
+                                        <li><a href="services.html"><span>Services</span></a></li>
+                                        <li class="has-sub"><a href="work.html"><span>My Work</span></a></li>
+                                        <li class="last"><a href="contact.html"><span>Contact</span></a></li>--%>
+                                        <li class="last">
+                                            <asp:DropDownList ID="dropDownListBranch" runat="server" CssClass="subheaderdropDownList"
+                                                AutoPostBack="true" Visible="false"
+                                               OnSelectedIndexChanged="dropDownListBranch_SelectedIndexChanged">
+                                            </asp:DropDownList>
+                                        </li>
+                                        <div class="clear"></div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-right">
+                                <div id="loginContainer">
+                                    <%-- Target="_self"=> loads the page within the same frame as the link tag--%>
+
+                                    <span>Welcome
+                                <asp:HyperLink ID="linkProfile" runat="server"
+                                    Target="_self" Text="[Demo User]" NavigateUrl="MyAccount.aspx">
+                                </asp:HyperLink>
+
+                                    </span>
+                                    <%--<a id="loginButton"><img src="images/plus.png" alt="" /></a>--%>
+                                    <%--OnClick="linkLogOut_Click"--%>
+                                    <asp:LinkButton ID="loginButton" runat="server" OnClick="loginButton_Click"> <img src="../BoostUnit/eCommerce/images/logoff2.png" alt="" /></asp:LinkButton>
+                                    <%--<div id="loginBox">                
+				          <form id="loginForm">
+				             <div>
+						    	<span><label>E-Mail</label></span>
+						    	<span><input name="userEmail" type="text" class="textbox"></span>
+						     </div>
+							 <div>
+						   		<span><input type="submit" value="Subscribe"></span>
+						     </div>
+						    
+					      </form>
+				      </div>--%>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <%-- <div class="product-main">
+            <div class="wrap">
+                <div class="products-top">--%>
+        <%--Loader--%>
+        <%--<div class="maincontainer">--%>
+       <%-- <header class="masthead"  <img src="../BoostUnit/images/home/header-bg.jpg" />
+        />--%>
+    
+        <asp:UpdatePanel ID="updatePanelSystemContents" style="background-image:url('../BoostUnit/images/home/header-bg.jpg')" runat="server">
+            <ContentTemplate>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+
+        <%--   </div>--%>
+        <%--Loader--%>
+        <div class="clear"></div>
+        <%--             </div>
+
+            </div>
+        </div>--%>
+        <%--  <asp:UpdatePanel ID="updatePanelFp" runat="server">
+                <ContentTemplate>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </ContentTemplate>
+            </asp:UpdatePanel>--%>
+        <div class="footer">
+
+            <div class="wrap">
+                <asp:UpdatePanel ID="updatePanel1" runat="server">
+                    <ContentTemplate>
+                        <div class="bottom-content">
+                            <div class="col_1_of_footer span_1_of_footer">
+                                <div class="footer-logo">
+                                    <a href="#">
+                                        
+                                        <img src="../BoostUnit/eCommerce/images/BizFlexer logo foo.png" alt="" /></a>
+                                </div>
+                                <div class="footer-border">
+                                    <ul class="footer_icon">
+                                        <li><a href="#" style="opacity: 1;">
+                                       
+                                            <img src="../BoostUnit/eCommerce/images/fb.png" alt=""></a></li>
+                                        <li><a href="#" style="opacity: 1;">
+                                            <img src="../BoostUnit/eCommerce/images/tw.png"alt=""></a></li>
+                                        <li><a href="#" style="opacity: 1;">
+                                            <img src="../BoostUnit/eCommerce/images/rss.png"alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+                        <div class="copy">
+                            <p class="copy">© 2021 Designed by <a href="#" >eSeller</a> </p>
+                        </div>
+
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+    </form>
+  <%--  <script language="javascript" type="text/javascript">--%>
+       <%-- var $c = $('<div/>', { html: c });//or var $c = $('<div'+c+'</div>');
+        $c.find('.aspNetHidden').remove()--%>
+
+    <%--</script>--%>
+
+</body>
+</html>
+
+

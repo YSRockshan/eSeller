@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58525E0A-E084-40EF-8D4E-C757BE672258}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BzFlexer.SAMS.Service</RootNamespace>
+    <AssemblyName>BzFlexer.SAMS.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentManagement\Biz_BranchPriceBookService.cs" />
+    <Compile Include="AgentManagement\Biz_BranchSalesAgentService.cs" />
+    <Compile Include="AgentManagement\Biz_CommissionsService.cs" />
+    <Compile Include="AgentManagement\Biz_InvoiceService.cs" />
+    <Compile Include="AgentManagement\Biz_MemberCommssionDetailsService.cs" />
+    <Compile Include="AgentManagement\Biz_MemberSalesAgentPositionService.cs" />
+    <Compile Include="AgentManagement\Biz_MemberSalesTargetService.cs" />
+    <Compile Include="AgentManagement\Biz_MultipleRatesService.cs" />
+    <Compile Include="AgentManagement\Biz_PeriodService.cs" />
+    <Compile Include="AgentManagement\Biz_PriceBookDetailsService.cs" />
+    <Compile Include="AgentManagement\Biz_PriceBookService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesAgentPositionService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesAgentService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesBudgetDetailsService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesBudgetService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesForecastDetailsService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesForecastService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesTargetDetailsService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesTargetService.cs" />
+    <Compile Include="AgentManagement\Biz_SalesTransactionService.cs" />
+    <Compile Include="AgentManagement\Biz_SingleRateService.cs" />
+    <Compile Include="AgentManagement\Biz_SlabDetailService.cs" />
+    <Compile Include="AgentManagement\Biz_SlabService.cs" />
+    <Compile Include="AgentManagement\Biz_SlabValueDetailService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reference\Biz_BranchProductService.cs" />
+    <Compile Include="Reference\Biz_BranchService.cs" />
+    <Compile Include="Reference\Biz_CurrencyService.cs" />
+    <Compile Include="Reference\Biz_EmployeeDetailService.cs" />
+    <Compile Include="Reference\Biz_GeneralProductService.cs" />
+    <Compile Include="Reference\Biz_InventoryItemService.cs" />
+    <Compile Include="Reference\Biz_ProductCategoryService.cs" />
+    <Compile Include="Reference\Biz_SerialService.cs" />
+    <Compile Include="Reference\Biz_StakeholderBranchService.cs" />
+    <Compile Include="Reference\Biz_StakeholderTypeService.cs" />
+    <Compile Include="Reference\Biz_StakeholderTypeStakeholderService.cs" />
+    <Compile Include="Reference\Biz_SubProductCategoryService.cs" />
+    <Compile Include="Reference\Biz_UnitOfMeasureService.cs" />
+    <Compile Include="Reference\Biz_UnitOfMeasureTypeService.cs" />
+    <Compile Include="Reports\Biz_BudgetSummeryService.cs" />
+    <Compile Include="Reports\Biz_ForecastSummeryService.cs" />
+    <Compile Include="Reports\Biz_SalesSummeryService.cs" />
+    <Compile Include="Reports\Biz_TargetSummeryService.cs" />
+    <Compile Include="Security\Biz_PasswordHistoryService.cs" />
+    <Compile Include="Security\Biz_ScreenService.cs" />
+    <Compile Include="Security\Biz_SecurityGroupScreenService.cs" />
+    <Compile Include="Security\Biz_SecurityGroupService.cs" />
+    <Compile Include="Security\Biz_StakeholderSecurityGroupService.cs" />
+    <Compile Include="Security\Biz_StakeholderTypeSecurityGroupService.cs" />
+    <Compile Include="Security\Biz_SystemModuleService.cs" />
+    <Compile Include="Security\Biz_UserLogService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BzFlexer.SAMS.Biz\BzFlexer.SAMS.Biz.csproj">
+      <Project>{BBE27F8D-37D1-4C38-A4D2-9BB12078773A}</Project>
+      <Name>BzFlexer.SAMS.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BzFlexer.SAMS.Data\BzFlexer.SAMS.Data.csproj">
+      <Project>{2773DBC4-0A72-41BE-95DE-841AB9460460}</Project>
+      <Name>BzFlexer.SAMS.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
